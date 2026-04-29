@@ -1,0 +1,1395 @@
+{
+  "schema_version": "1.0",
+  "total_products": 30000,
+  "total_categories": 4,
+  "top_brands": [
+    "Unknown",
+    "ARBO",
+    "REEB",
+    "True Bl",
+    "Pu",
+    "ECKO Unl",
+    "Free Authori",
+    "Keo",
+    "Amp",
+    "Black Beat",
+    "PixF",
+    "yellowvib",
+    "vims rai",
+    "Marca Disa",
+    "Oka",
+    "Gracew",
+    "TEE BUD",
+    "Shoef",
+    "V",
+    "CupidSto"
+  ],
+  "categories": {
+    "Bags, Wallets & Belts": {
+      "node_id": "01",
+      "total": 41,
+      "price_range": {
+        "min": 125.0,
+        "max": 749.0
+      },
+      "avg_rating": 4.13,
+      "top_brands": [
+        "Unknown"
+      ],
+      "sub_categories": {
+        "Brand Trunk Bags, Wallets & Belts": {
+          "node_id": "01_01",
+          "total": 1,
+          "price_range": {
+            "min": 125.0,
+            "max": 125.0,
+            "avg": 125.0
+          },
+          "avg_rating": 4.1,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "01_01_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 1,
+              "avg_price": 125.0,
+              "avg_rating": 4.1,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "1 Brand Trunk Bags, Wallets & Belts products, price ₹125–₹125, avg rating 4.1. Top brands: Unknown."
+        },
+        "SUNSHOPPING Bags, Wallets & Belts": {
+          "node_id": "01_02",
+          "total": 10,
+          "price_range": {
+            "min": 149.0,
+            "max": 370.0,
+            "avg": 305.8
+          },
+          "avg_rating": 4.16,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "01_02_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 10,
+              "avg_price": 305.8,
+              "avg_rating": 4.16,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "10 SUNSHOPPING Bags, Wallets & Belts products, price ₹149–₹370, avg rating 4.16. Top brands: Unknown."
+        },
+        "Sunshopping Bags, Wallets & Belts": {
+          "node_id": "01_03",
+          "total": 21,
+          "price_range": {
+            "min": 135.0,
+            "max": 370.0,
+            "avg": 207.81
+          },
+          "avg_rating": 4.38,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "01_03_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 21,
+              "avg_price": 207.81,
+              "avg_rating": 4.38,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "21 Sunshopping Bags, Wallets & Belts products, price ₹135–₹370, avg rating 4.38. Top brands: Unknown."
+        },
+        "Winsome Deal Bags, Wallets & Belts": {
+          "node_id": "01_04",
+          "total": 4,
+          "price_range": {
+            "min": 199.0,
+            "max": 249.0,
+            "avg": 224.5
+          },
+          "avg_rating": 3.75,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "01_04_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 4,
+              "avg_price": 224.5,
+              "avg_rating": 3.75,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "4 Winsome Deal Bags, Wallets & Belts products, price ₹199–₹249, avg rating 3.75. Top brands: Unknown."
+        },
+        "YOFAMA Bags, Wallets & Belts": {
+          "node_id": "01_05",
+          "total": 4,
+          "price_range": {
+            "min": 349.0,
+            "max": 358.0,
+            "avg": 351.25
+          },
+          "avg_rating": 3.5,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "01_05_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 4,
+              "avg_price": 351.25,
+              "avg_rating": 3.5,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "4 YOFAMA Bags, Wallets & Belts products, price ₹349–₹358, avg rating 3.5. Top brands: Unknown."
+        },
+        "mentiezi Bags, Wallets & Belts": {
+          "node_id": "01_06",
+          "total": 1,
+          "price_range": {
+            "min": 749.0,
+            "max": 749.0,
+            "avg": 749.0
+          },
+          "avg_rating": 2.5,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "mid": {
+              "node_id": "01_06_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 1,
+              "avg_price": 749.0,
+              "avg_rating": 2.5,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "1 mentiezi Bags, Wallets & Belts products, price ₹749–₹749, avg rating 2.5. Top brands: Unknown."
+        }
+      },
+      "summary": "41 products across 6 sub-categories. Price range ₹125–₹749. Top brands: Unknown."
+    },
+    "Clothing and Accessories": {
+      "node_id": "02",
+      "total": 28971,
+      "price_range": {
+        "min": 0.0,
+        "max": 7999.0
+      },
+      "avg_rating": 3.63,
+      "top_brands": [
+        "Unknown",
+        "ARBO",
+        "REEB",
+        "True Bl",
+        "Pu",
+        "ECKO Unl",
+        "Free Authori",
+        "Keo",
+        "Amp",
+        "PixF"
+      ],
+      "sub_categories": {
+        "Blazers, Waistcoats and Suits": {
+          "node_id": "02_01",
+          "total": 136,
+          "price_range": {
+            "min": 699.0,
+            "max": 7998.0,
+            "avg": 2004.08
+          },
+          "avg_rating": 3.7,
+          "top_brands": [
+            "True Bl",
+            "Zack Fo",
+            "Mett",
+            "Lar",
+            "Solid Styl",
+            "ABC ANY BUDY CLE",
+            "Social Pige",
+            "Oka"
+          ],
+          "price_bands": {
+            "mid": {
+              "node_id": "02_01_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 63,
+              "avg_price": 1011.78,
+              "avg_rating": 4.19,
+              "top_brands": [
+                "Zack Fo",
+                "True Bl",
+                "ABC ANY BUDY CLE",
+                "Solid Styl"
+              ]
+            },
+            "premium": {
+              "node_id": "02_01_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 73,
+              "avg_price": 2860.45,
+              "avg_rating": 3.19,
+              "top_brands": [
+                "True Bl",
+                "Mett",
+                "Lar",
+                "Solid Styl",
+                "Social Pige",
+                "Oka"
+              ]
+            }
+          },
+          "summary": "136 Blazers, Waistcoats and Suits products, price ₹699–₹7,998, avg rating 3.7. Top brands: True Bl, Zack Fo, Mett, Lar."
+        },
+        "Bottomwear": {
+          "node_id": "02_02",
+          "total": 3862,
+          "price_range": {
+            "min": 0.0,
+            "max": 7794.0,
+            "avg": 1118.43
+          },
+          "avg_rating": 3.63,
+          "top_brands": [
+            "REEB",
+            "ECKO Unl",
+            "Pu",
+            "True Bl",
+            "Uber Urb",
+            "Breakboun",
+            "Unknown",
+            "Lev",
+            "Mountain colou",
+            "M.R. FASHI"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_02_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 591,
+              "avg_price": 426.82,
+              "avg_rating": 3.67,
+              "top_brands": [
+                "Urban D",
+                "Uber Urb",
+                "M7 By Metrona",
+                "HUMBE",
+                "Unknown",
+                "TOM BU",
+                "Blue Sha",
+                "PIX"
+              ]
+            },
+            "mid": {
+              "node_id": "02_02_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 2567,
+              "avg_price": 917.18,
+              "avg_rating": 3.63,
+              "top_brands": [
+                "True Bl",
+                "Breakboun",
+                "Uber Urb",
+                "Mountain colou",
+                "ECKO Unl",
+                "Unknown",
+                "Pu",
+                "REEB"
+              ]
+            },
+            "premium": {
+              "node_id": "02_02_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 704,
+              "avg_price": 2433.48,
+              "avg_rating": 3.59,
+              "top_brands": [
+                "REEB",
+                "Lev",
+                "Pu",
+                "ECKO Unl",
+                "Wab",
+                "Sherr",
+                "G",
+                "REEBOK CLASSI"
+              ]
+            }
+          },
+          "summary": "3,862 Bottomwear products, price ₹0–₹7,794, avg rating 3.63. Top brands: REEB, ECKO Unl, Pu, True Bl."
+        },
+        "Clothing Accessories": {
+          "node_id": "02_03",
+          "total": 1760,
+          "price_range": {
+            "min": 0.0,
+            "max": 1199.0,
+            "avg": 392.43
+          },
+          "avg_rating": 3.95,
+          "top_brands": [
+            "Unknown",
+            "Gracew",
+            "Cots",
+            "REEB",
+            "Welwe",
+            "Footprin",
+            "Paridhanlok Onli",
+            "V",
+            "FOOT F",
+            "ertugrul ghazi c"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_03_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 1515,
+              "avg_price": 354.49,
+              "avg_rating": 3.98,
+              "top_brands": [
+                "Unknown",
+                "Gracew",
+                "Cots",
+                "Welwe",
+                "REEB",
+                "Footprin",
+                "FOOT F",
+                "Pu"
+              ]
+            },
+            "mid": {
+              "node_id": "02_03_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 245,
+              "avg_price": 628.53,
+              "avg_rating": 3.77,
+              "top_brands": [
+                "Unknown",
+                "Gracew",
+                "Paridhanlok Onli",
+                "Free Authori",
+                "Cots",
+                "V",
+                "TakeInCa",
+                "TE"
+              ]
+            }
+          },
+          "summary": "1,760 Clothing Accessories products, price ₹0–₹1,199, avg rating 3.95. Top brands: Unknown, Gracew, Cots, REEB."
+        },
+        "Crocks Club Clothing and Accessories": {
+          "node_id": "02_04",
+          "total": 15,
+          "price_range": {
+            "min": 799.0,
+            "max": 999.0,
+            "avg": 945.67
+          },
+          "avg_rating": 3.68,
+          "top_brands": [
+            "Crocks Cl"
+          ],
+          "price_bands": {
+            "mid": {
+              "node_id": "02_04_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 15,
+              "avg_price": 945.67,
+              "avg_rating": 3.68,
+              "top_brands": [
+                "Crocks Cl"
+              ]
+            }
+          },
+          "summary": "15 Crocks Club Clothing and Accessories products, price ₹799–₹999, avg rating 3.68. Top brands: Crocks Cl."
+        },
+        "Fabrics": {
+          "node_id": "02_05",
+          "total": 535,
+          "price_range": {
+            "min": 349.0,
+            "max": 759.0,
+            "avg": 381.57
+          },
+          "avg_rating": 3.29,
+          "top_brands": [
+            "vims rai",
+            "Royalty Retail And Expo",
+            "AMZKA",
+            "Fa"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_05_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 533,
+              "avg_price": 380.26,
+              "avg_rating": 3.29,
+              "top_brands": [
+                "vims rai",
+                "Royalty Retail And Expo",
+                "AMZKA"
+              ]
+            },
+            "mid": {
+              "node_id": "02_05_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 2,
+              "avg_price": 729.0,
+              "avg_rating": 2.5,
+              "top_brands": [
+                "Royalty Retail And Expo",
+                "Fa"
+              ]
+            }
+          },
+          "summary": "535 Fabrics products, price ₹349–₹759, avg rating 3.29. Top brands: vims rai, Royalty Retail And Expo, AMZKA, Fa."
+        },
+        "INSPIRE Clothing and Accessories": {
+          "node_id": "02_06",
+          "total": 4,
+          "price_range": {
+            "min": 499.0,
+            "max": 499.0,
+            "avg": 499.0
+          },
+          "avg_rating": 3.5,
+          "top_brands": [
+            "INSPI"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_06_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 4,
+              "avg_price": 499.0,
+              "avg_rating": 3.5,
+              "top_brands": [
+                "INSPI"
+              ]
+            }
+          },
+          "summary": "4 INSPIRE Clothing and Accessories products, price ₹499–₹499, avg rating 3.5. Top brands: INSPI."
+        },
+        "Innerwear and Swimwear": {
+          "node_id": "02_07",
+          "total": 1774,
+          "price_range": {
+            "min": 140.0,
+            "max": 1529.0,
+            "avg": 488.05
+          },
+          "avg_rating": 3.52,
+          "top_brands": [
+            "Unknown",
+            "V",
+            "Urban D",
+            "East I",
+            "Lucky Rog",
+            "GLO",
+            "TOM BU",
+            "Sharar",
+            "Bumm",
+            "Simon Rob"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_07_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 1084,
+              "avg_price": 324.16,
+              "avg_rating": 3.53,
+              "top_brands": [
+                "Unknown",
+                "V",
+                "Lucky Rog",
+                "Urban D",
+                "GLO",
+                "TOM BU",
+                "Simon Rob",
+                "Fairdea"
+              ]
+            },
+            "mid": {
+              "node_id": "02_07_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 689,
+              "avg_price": 744.38,
+              "avg_rating": 3.49,
+              "top_brands": [
+                "Unknown",
+                "V",
+                "Urban D",
+                "East I",
+                "Sharar",
+                "MODERN CR",
+                "Bumm",
+                "Almo We"
+              ]
+            },
+            "premium": {
+              "node_id": "02_07_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 1,
+              "avg_price": 1529.0,
+              "avg_rating": 4.1,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "1,774 Innerwear and Swimwear products, price ₹140–₹1,529, avg rating 3.52. Top brands: Unknown, V, Urban D, East I."
+        },
+        "Inspire Clothing and Accessories": {
+          "node_id": "02_08",
+          "total": 23,
+          "price_range": {
+            "min": 499.0,
+            "max": 1319.0,
+            "avg": 831.17
+          },
+          "avg_rating": 3.5,
+          "top_brands": [
+            "Inspi"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_08_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 4,
+              "avg_price": 499.0,
+              "avg_rating": 3.38,
+              "top_brands": [
+                "Inspi"
+              ]
+            },
+            "mid": {
+              "node_id": "02_08_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 19,
+              "avg_price": 901.11,
+              "avg_rating": 3.53,
+              "top_brands": [
+                "Inspi"
+              ]
+            }
+          },
+          "summary": "23 Inspire Clothing and Accessories products, price ₹499–₹1,319, avg rating 3.5. Top brands: Inspi."
+        },
+        "Kurtas, Ethnic Sets and Bottoms": {
+          "node_id": "02_09",
+          "total": 1248,
+          "price_range": {
+            "min": 235.0,
+            "max": 5200.0,
+            "avg": 826.77
+          },
+          "avg_rating": 3.69,
+          "top_brands": [
+            "Unknown",
+            "SATDEVANGIKHADIBHAND",
+            "Jagdish Garmen",
+            "LDHSA",
+            "Mah",
+            "FASHION WOU",
+            "Purple Sta",
+            "allan pet",
+            "FOREVER YOU",
+            "Zack Fo"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_09_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 252,
+              "avg_price": 395.72,
+              "avg_rating": 3.73,
+              "top_brands": [
+                "Unknown",
+                "Mah",
+                "LDHSA",
+                "ALQI",
+                "Purple Sta",
+                "Jai Textil",
+                "FASHION WOU",
+                "SATDEVANGIKHADIBHAND"
+              ]
+            },
+            "mid": {
+              "node_id": "02_09_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 925,
+              "avg_price": 814.62,
+              "avg_rating": 3.64,
+              "top_brands": [
+                "Unknown",
+                "SATDEVANGIKHADIBHAND",
+                "Jagdish Garmen",
+                "LDHSA",
+                "FASHION WOU",
+                "Purple Sta",
+                "allan pet",
+                "FOREVER YOU"
+              ]
+            },
+            "premium": {
+              "node_id": "02_09_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 71,
+              "avg_price": 2514.86,
+              "avg_rating": 4.1,
+              "top_brands": [
+                "Unknown",
+                "LDHSA",
+                "FASHION WOU",
+                "Szto",
+                "Mah"
+              ]
+            }
+          },
+          "summary": "1,248 Kurtas, Ethnic Sets and Bottoms products, price ₹235–₹5,200, avg rating 3.69. Top brands: Unknown, SATDEVANGIKHADIBHAND, Jagdish Garmen, LDHSA."
+        },
+        "Raincoats": {
+          "node_id": "02_10",
+          "total": 34,
+          "price_range": {
+            "min": 329.0,
+            "max": 1095.0,
+            "avg": 802.26
+          },
+          "avg_rating": 3.58,
+          "top_brands": [
+            "The Dry Ca",
+            "Wet Off Ho",
+            "BS S",
+            "Wadhaw",
+            "Allwin",
+            "TRANSPERAN",
+            "Fashion Dre",
+            "Divi Divi",
+            "stockhawke"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_10_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 7,
+              "avg_price": 403.0,
+              "avg_rating": 3.14,
+              "top_brands": [
+                "BS S",
+                "Wadhaw",
+                "Allwin",
+                "stockhawke"
+              ]
+            },
+            "mid": {
+              "node_id": "02_10_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 27,
+              "avg_price": 905.78,
+              "avg_rating": 3.69,
+              "top_brands": [
+                "The Dry Ca",
+                "Wet Off Ho",
+                "TRANSPERAN",
+                "Fashion Dre",
+                "Divi Divi"
+              ]
+            }
+          },
+          "summary": "34 Raincoats products, price ₹329–₹1,095, avg rating 3.58. Top brands: The Dry Ca, Wet Off Ho, BS S, Wadhaw."
+        },
+        "Roy Clothing and Accessories": {
+          "node_id": "02_11",
+          "total": 12,
+          "price_range": {
+            "min": 451.0,
+            "max": 571.0,
+            "avg": 500.33
+          },
+          "avg_rating": 3.36,
+          "top_brands": [
+            "R"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_11_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 8,
+              "avg_price": 470.5,
+              "avg_rating": 3.29,
+              "top_brands": [
+                "R"
+              ]
+            },
+            "mid": {
+              "node_id": "02_11_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 4,
+              "avg_price": 560.0,
+              "avg_rating": 3.5,
+              "top_brands": [
+                "R"
+              ]
+            }
+          },
+          "summary": "12 Roy Clothing and Accessories products, price ₹451–₹571, avg rating 3.36. Top brands: R."
+        },
+        "Sleepwear": {
+          "node_id": "02_12",
+          "total": 122,
+          "price_range": {
+            "min": 359.0,
+            "max": 1495.0,
+            "avg": 699.37
+          },
+          "avg_rating": 3.67,
+          "top_brands": [
+            "Urban D",
+            "INTER CREATI",
+            "K",
+            "Pol",
+            "Bonnevil",
+            "Unknown",
+            "NETT",
+            "PATWA AND COMPA",
+            "U.s.Polo Associati",
+            "LIVST"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_12_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 52,
+              "avg_price": 440.6,
+              "avg_rating": 3.54,
+              "top_brands": [
+                "Urban D",
+                "Bonnevil",
+                "Pol",
+                "Dex",
+                "TeeMoo",
+                "LIVST"
+              ]
+            },
+            "mid": {
+              "node_id": "02_12_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 70,
+              "avg_price": 891.6,
+              "avg_rating": 3.76,
+              "top_brands": [
+                "INTER CREATI",
+                "K",
+                "Urban D",
+                "Unknown",
+                "Pol",
+                "NETT",
+                "PATWA AND COMPA",
+                "U.s.Polo Associati"
+              ]
+            }
+          },
+          "summary": "122 Sleepwear products, price ₹359–₹1,495, avg rating 3.67. Top brands: Urban D, INTER CREATI, K, Pol."
+        },
+        "Topwear": {
+          "node_id": "02_13",
+          "total": 16575,
+          "price_range": {
+            "min": 128.0,
+            "max": 4228.0,
+            "avg": 589.45
+          },
+          "avg_rating": 3.62,
+          "top_brands": [
+            "ARBO",
+            "ECKO Unl",
+            "Keo",
+            "True Bl",
+            "Amp",
+            "Free Authori",
+            "PixF",
+            "yellowvib",
+            "Pu",
+            "REEB"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_13_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 8536,
+              "avg_price": 376.19,
+              "avg_rating": 3.67,
+              "top_brands": [
+                "ARBO",
+                "PixF",
+                "Keo",
+                "TEE BUD",
+                "CupidSto",
+                "Xi",
+                "Free Authori",
+                "ATHL"
+              ]
+            },
+            "mid": {
+              "node_id": "02_13_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 7709,
+              "avg_price": 766.5,
+              "avg_rating": 3.57,
+              "top_brands": [
+                "Amp",
+                "ECKO Unl",
+                "True Bl",
+                "Pu",
+                "REEB",
+                "Free Authori",
+                "yellowvib",
+                "Shoef"
+              ]
+            },
+            "premium": {
+              "node_id": "02_13_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 330,
+              "avg_price": 1970.23,
+              "avg_rating": 3.49,
+              "top_brands": [
+                "Lev",
+                "Dudli",
+                "REEB",
+                "Pu",
+                "yellowvib",
+                "True Bl",
+                "adidas Origina",
+                "Lucky Bi"
+              ]
+            }
+          },
+          "summary": "16,575 Topwear products, price ₹128–₹4,228, avg rating 3.62. Top brands: ARBO, ECKO Unl, Keo, True Bl."
+        },
+        "Tracksuits": {
+          "node_id": "02_14",
+          "total": 90,
+          "price_range": {
+            "min": 699.0,
+            "max": 7999.0,
+            "avg": 1816.89
+          },
+          "avg_rating": 3.67,
+          "top_brands": [
+            "Unknown",
+            "Lucky Bi",
+            "Pu",
+            "REEB",
+            "Oka",
+            "M7 By Metrona",
+            "LIVST",
+            "Blue Sha",
+            "ATHL",
+            "TOM BU"
+          ],
+          "price_bands": {
+            "mid": {
+              "node_id": "02_14_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 42,
+              "avg_price": 1193.86,
+              "avg_rating": 3.65,
+              "top_brands": [
+                "Unknown",
+                "Lucky Bi",
+                "M7 By Metrona",
+                "LIVST",
+                "Blue Sha",
+                "ATHL",
+                "TOM BU",
+                "YOGA"
+              ]
+            },
+            "premium": {
+              "node_id": "02_14_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 48,
+              "avg_price": 2362.04,
+              "avg_rating": 3.7,
+              "top_brands": [
+                "Unknown",
+                "Pu",
+                "REEB",
+                "Lucky Bi",
+                "Oka",
+                "Bofri",
+                "T10 Spor"
+              ]
+            }
+          },
+          "summary": "90 Tracksuits products, price ₹699–₹7,999, avg rating 3.67. Top brands: Unknown, Lucky Bi, Pu, REEB."
+        },
+        "Uber Urban Clothing and Accessories": {
+          "node_id": "02_15",
+          "total": 28,
+          "price_range": {
+            "min": 299.0,
+            "max": 2349.0,
+            "avg": 1265.04
+          },
+          "avg_rating": 3.33,
+          "top_brands": [
+            "Uber Urb"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_15_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 6,
+              "avg_price": 419.17,
+              "avg_rating": 3.55,
+              "top_brands": [
+                "Uber Urb"
+              ]
+            },
+            "mid": {
+              "node_id": "02_15_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 17,
+              "avg_price": 1244.76,
+              "avg_rating": 3.32,
+              "top_brands": [
+                "Uber Urb"
+              ]
+            },
+            "premium": {
+              "node_id": "02_15_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 5,
+              "avg_price": 2349.0,
+              "avg_rating": 3.1,
+              "top_brands": [
+                "Uber Urb"
+              ]
+            }
+          },
+          "summary": "28 Uber Urban Clothing and Accessories products, price ₹299–₹2,349, avg rating 3.33. Top brands: Uber Urb."
+        },
+        "Winter Wear": {
+          "node_id": "02_16",
+          "total": 2753,
+          "price_range": {
+            "min": 148.0,
+            "max": 7799.0,
+            "avg": 1264.94
+          },
+          "avg_rating": 3.66,
+          "top_brands": [
+            "REEB",
+            "Pu",
+            "Free Authori",
+            "JACK AND HAR",
+            "Mett",
+            "Unknown",
+            "VOXA",
+            "True Bl",
+            "AXMA",
+            "M7 By Metrona"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "02_16_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 273,
+              "avg_price": 373.39,
+              "avg_rating": 3.57,
+              "top_brands": [
+                "ATHL",
+                "Unknown",
+                "Cots",
+                "JACK AND HAR",
+                "Lucky Bi",
+                "Man",
+                "Gracew",
+                "Rose We"
+              ]
+            },
+            "mid": {
+              "node_id": "02_16_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 1765,
+              "avg_price": 929.55,
+              "avg_rating": 3.65,
+              "top_brands": [
+                "Free Authori",
+                "JACK AND HAR",
+                "VOXA",
+                "REEB",
+                "Unknown",
+                "AXMA",
+                "M7 By Metrona",
+                "Mett"
+              ]
+            },
+            "premium": {
+              "node_id": "02_16_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 715,
+              "avg_price": 2433.26,
+              "avg_rating": 3.75,
+              "top_brands": [
+                "Pu",
+                "REEB",
+                "Mett",
+                "True Bl",
+                "Oka",
+                "REEBOK CLASSI",
+                "ECKO Unl",
+                "G"
+              ]
+            }
+          },
+          "summary": "2,753 Winter Wear products, price ₹148–₹7,799, avg rating 3.66. Top brands: REEB, Pu, Free Authori, JACK AND HAR."
+        }
+      },
+      "summary": "28,971 products across 16 sub-categories. Price range ₹0–₹7,999. Top brands: Unknown, ARBO, REEB, True Bl."
+    },
+    "Footwear": {
+      "node_id": "03",
+      "total": 987,
+      "price_range": {
+        "min": 274.0,
+        "max": 2430.0
+      },
+      "avg_rating": 3.88,
+      "top_brands": [
+        "Black Beat",
+        "Vector",
+        "Bone"
+      ],
+      "sub_categories": {
+        "Men's Footwear": {
+          "node_id": "03_01",
+          "total": 987,
+          "price_range": {
+            "min": 274.0,
+            "max": 2430.0,
+            "avg": 501.23
+          },
+          "avg_rating": 3.88,
+          "top_brands": [
+            "Black Beat",
+            "Vector",
+            "Bone"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "03_01_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 766,
+              "avg_price": 348.9,
+              "avg_rating": 3.88,
+              "top_brands": [
+                "Black Beat",
+                "Bone",
+                "Vector"
+              ]
+            },
+            "mid": {
+              "node_id": "03_01_mid",
+              "label": "₹500 – ₹1,500",
+              "price_range": {
+                "min": 500,
+                "max": 1499
+              },
+              "count": 189,
+              "avg_price": 888.31,
+              "avg_rating": 3.87,
+              "top_brands": [
+                "Vector",
+                "Bone"
+              ]
+            },
+            "premium": {
+              "node_id": "03_01_premium",
+              "label": "Above ₹1,500",
+              "price_range": {
+                "min": 1500,
+                "max": 999999
+              },
+              "count": 32,
+              "avg_price": 1861.41,
+              "avg_rating": 3.75,
+              "top_brands": [
+                "Vector"
+              ]
+            }
+          },
+          "summary": "987 Men's Footwear products, price ₹274–₹2,430, avg rating 3.88. Top brands: Black Beat, Vector, Bone."
+        }
+      },
+      "summary": "987 products across 1 sub-categories. Price range ₹274–₹2,430. Top brands: Black Beat, Vector, Bone."
+    },
+    "Toys": {
+      "node_id": "04",
+      "total": 1,
+      "price_range": {
+        "min": 189.0,
+        "max": 189.0
+      },
+      "avg_rating": 3.6,
+      "top_brands": [
+        "Unknown"
+      ],
+      "sub_categories": {
+        "Party Supplies": {
+          "node_id": "04_01",
+          "total": 1,
+          "price_range": {
+            "min": 189.0,
+            "max": 189.0,
+            "avg": 189.0
+          },
+          "avg_rating": 3.6,
+          "top_brands": [
+            "Unknown"
+          ],
+          "price_bands": {
+            "budget": {
+              "node_id": "04_01_budget",
+              "label": "Under ₹500",
+              "price_range": {
+                "min": 0,
+                "max": 499
+              },
+              "count": 1,
+              "avg_price": 189.0,
+              "avg_rating": 3.6,
+              "top_brands": [
+                "Unknown"
+              ]
+            }
+          },
+          "summary": "1 Party Supplies products, price ₹189–₹189, avg rating 3.6. Top brands: Unknown."
+        }
+      },
+      "summary": "1 products across 1 sub-categories. Price range ₹189–₹189. Top brands: Unknown."
+    }
+  },
+  "price_band_definitions": [
+    {
+      "key": "budget",
+      "label": "Under ₹500",
+      "min": 0,
+      "max": 499
+    },
+    {
+      "key": "mid",
+      "label": "₹500 – ₹1,500",
+      "min": 500,
+      "max": 1499
+    },
+    {
+      "key": "premium",
+      "label": "Above ₹1,500",
+      "min": 1500,
+      "max": 999999
+    }
+  ]
+}
