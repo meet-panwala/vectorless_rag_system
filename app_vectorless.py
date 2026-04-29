@@ -45,7 +45,7 @@ EXAMPLE_QUERIES = [
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Flipkart Fashion AI",
+    page_title="Shopping AI Assistant",
     page_icon="🛍️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -120,7 +120,7 @@ def ensure_agent(model: str):
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🛍️ Flipkart Fashion AI")
+    st.markdown("## 🛍️ Shopping AI Assistant")
     st.markdown("*Vectorless RAG · PageIndex style*")
     st.divider()
 
@@ -169,7 +169,7 @@ with st.sidebar:
 # ── Header ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="main-header">
-    <h2 style="margin:0">🛍️ Flipkart Fashion Shopping Assistant</h2>
+    <h2 style="margin:0">🛍️ Shopping AI Assistant</h2>
     <p style="margin:4px 0 0;opacity:.9">Vectorless RAG · 30,000+ Products · Groq LLM</p>
 </div>
 """, unsafe_allow_html=True)
