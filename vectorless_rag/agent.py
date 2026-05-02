@@ -31,7 +31,7 @@ FORCE_ANSWER_AFTER    = 3
 # ─── Off-topic refusal message ────────────────────────────────────────────────
 REFUSAL_MESSAGE = (
     "I'm sorry, I don't have information about that. 🙏\n\n"
-    "I am a **Flipkart Fashion Shopping Assistant** and I only have knowledge about:\n"
+    "I am a **Fashion Shopping AI Assistant** and I only have knowledge about:\n"
     "- 👗 Clothing & Accessories (kurtas, sarees, shirts, dresses, jeans, etc.)\n"
     "- 👟 Footwear (sneakers, sandals, formal shoes, etc.)\n"
     "- 👜 Bags, Wallets & Belts\n"
