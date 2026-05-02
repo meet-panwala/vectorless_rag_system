@@ -35,6 +35,7 @@ REFUSAL_MESSAGE = (
     "- 👗 Clothing & Accessories (kurtas, sarees, shirts, dresses, jeans, etc.)\n"
     "- 👟 Footwear (sneakers, sandals, formal shoes, etc.)\n"
     "- 👜 Bags, Wallets & Belts\n"
+    "- Toys"
     "- 🛍️ Product prices, ratings, brands, and discounts\n\n"
     "Please ask me something related to fashion products and I'll be happy to help!"
 )
