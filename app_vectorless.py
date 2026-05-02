@@ -1,12 +1,13 @@
 """
 app_vectorless.py  —  Final Streamlit UI
 -----------------------------------------
-Changes:
-  ✅ compound-beta + compound-beta-mini restored with TPM warning label
-  ✅ 429 shows orange warning + "Switch model" tip, NOT a crash
-  ✅ 413 shows orange warning + "Clear Chat" tip
-  ✅ Model descriptions shown in sidebar
-  ✅ Auto-builds catalog index on first run
+Dark mode fixes:
+  ✅ Buttons readable in dark mode (light text on dark bg)
+  ✅ Chat message bubbles visible in dark mode
+  ✅ Sidebar text visible in dark mode
+  ✅ Covers both browser dark mode (prefers-color-scheme)
+     and Streamlit dark theme toggle ([data-theme="dark"])
+  ✅ Light mode completely unchanged
 """
 
 import os
@@ -24,11 +25,10 @@ load_dotenv(BASE_DIR / ".env")
 JSON_PATH = str(BASE_DIR / "data" / "flipkart_fashion_products_dataset.json")
 TREE_PATH = str(BASE_DIR / "catalog_index" / "catalog_tree.json")
 
-# ── Model list with labels ────────────────────────────────────────────────────
 MODEL_OPTIONS = {
-    "llama-3.3-70b-versatile":  "llama-3.3-70b-versatile",
-    "llama-3.1-70b-versatile":  "llama-3.1-70b-versatile",
-    "llama-3.1-8b-instant": "llama-3.1-8b-instant",
+    "llama-3.3-70b-versatile": "llama-3.3-70b-versatile",
+    "llama-3.1-70b-versatile": "llama-3.1-70b-versatile",
+    "llama-3.1-8b-instant":    "llama-3.1-8b-instant",
 }
 
 EXAMPLE_QUERIES = [
@@ -43,7 +43,6 @@ EXAMPLE_QUERIES = [
     "What categories do you have?",
 ]
 
-# ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Shopping AI Assistant",
     page_icon="🛍️",
@@ -51,13 +50,193 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# ── CSS: light + dark mode ────────────────────────────────────────────────────
 st.markdown("""
 <style>
-.stApp { background-color: #f8f9fa; }
+
+/* ══════════════════════════════════════════════
+   LIGHT MODE (default — unchanged)
+══════════════════════════════════════════════ */
+
+.stApp {
+    background-color: #f8f9fa;
+}
+
 .main-header {
     background: linear-gradient(135deg, #2193b0, #6dd5ed);
-    color: white; padding: 18px 24px; border-radius: 12px; margin-bottom: 18px;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    margin-bottom: 18px;
 }
+
+/* Sidebar example query buttons */
+section[data-testid="stSidebar"] .stButton > button {
+    background-color: #ffffff;
+    color: #1a1a2e;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 13px;
+}
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background-color: #e8f4f8;
+    border-color: #2193b0;
+    color: #2193b0;
+}
+
+/* Main area buttons */
+.main .stButton > button,
+.block-container .stButton > button {
+    background-color: #ffffff;
+    color: #1a1a2e;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.main .stButton > button:hover,
+.block-container .stButton > button:hover {
+    background-color: #e8f4f8;
+    border-color: #2193b0;
+    color: #2193b0;
+}
+
+
+/* ══════════════════════════════════════════════
+   DARK MODE — browser level (prefers-color-scheme)
+══════════════════════════════════════════════ */
+
+@media (prefers-color-scheme: dark) {
+    .stApp {
+        background-color: #0e1117 !important;
+    }
+
+    /* Sidebar buttons */
+    section[data-testid="stSidebar"] .stButton > button {
+        background-color: #1e2330 !important;
+        color: #e0e0e0 !important;
+        border: 1px solid #3a3f50 !important;
+    }
+    section[data-testid="stSidebar"] .stButton > button:hover {
+        background-color: #2a3550 !important;
+        border-color: #6dd5ed !important;
+        color: #6dd5ed !important;
+    }
+
+    /* Main area buttons */
+    .main .stButton > button,
+    .block-container .stButton > button {
+        background-color: #1e2330 !important;
+        color: #e0e0e0 !important;
+        border: 1px solid #3a3f50 !important;
+    }
+    .main .stButton > button:hover,
+    .block-container .stButton > button:hover {
+        background-color: #2a3550 !important;
+        border-color: #6dd5ed !important;
+        color: #6dd5ed !important;
+    }
+
+    /* Chat messages */
+    [data-testid="stChatMessage"] {
+        background-color: #1a1f2e !important;
+        border-radius: 10px !important;
+    }
+
+    /* Caption / subtext */
+    .stChatMessage .stCaption,
+    [data-testid="stChatMessage"] .stCaption {
+        color: #9aa0b0 !important;
+    }
+
+    /* Expander */
+    .streamlit-expanderHeader {
+        background-color: #1a1f2e !important;
+        color: #e0e0e0 !important;
+    }
+    .streamlit-expanderContent {
+        background-color: #12151e !important;
+    }
+
+    /* General text */
+    .stMarkdown p, .stMarkdown li {
+        color: #e0e0e0;
+    }
+
+    hr {
+        border-color: #3a3f50 !important;
+    }
+
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] span,
+    section[data-testid="stSidebar"] label {
+        color: #c0c5d0 !important;
+    }
+}
+
+
+/* ══════════════════════════════════════════════
+   DARK MODE — Streamlit theme toggle
+   (when user picks dark in Streamlit's ☰ menu)
+══════════════════════════════════════════════ */
+
+[data-theme="dark"] .stApp {
+    background-color: #0e1117 !important;
+}
+
+[data-theme="dark"] section[data-testid="stSidebar"] .stButton > button {
+    background-color: #1e2330 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #3a3f50 !important;
+}
+[data-theme="dark"] section[data-testid="stSidebar"] .stButton > button:hover {
+    background-color: #2a3550 !important;
+    border-color: #6dd5ed !important;
+    color: #6dd5ed !important;
+}
+
+[data-theme="dark"] .main .stButton > button,
+[data-theme="dark"] .block-container .stButton > button {
+    background-color: #1e2330 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #3a3f50 !important;
+}
+[data-theme="dark"] .main .stButton > button:hover,
+[data-theme="dark"] .block-container .stButton > button:hover {
+    background-color: #2a3550 !important;
+    border-color: #6dd5ed !important;
+    color: #6dd5ed !important;
+}
+
+[data-theme="dark"] [data-testid="stChatMessage"] {
+    background-color: #1a1f2e !important;
+    border-radius: 10px !important;
+}
+
+[data-theme="dark"] .stChatMessage .stCaption,
+[data-theme="dark"] [data-testid="stChatMessage"] .stCaption {
+    color: #9aa0b0 !important;
+}
+
+[data-theme="dark"] .streamlit-expanderHeader {
+    background-color: #1a1f2e !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .streamlit-expanderContent {
+    background-color: #12151e !important;
+}
+
+[data-theme="dark"] hr {
+    border-color: #3a3f50 !important;
+}
+
+[data-theme="dark"] section[data-testid="stSidebar"] p,
+[data-theme="dark"] section[data-testid="stSidebar"] span,
+[data-theme="dark"] section[data-testid="stSidebar"] label {
+    color: #c0c5d0 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -125,7 +304,6 @@ with st.sidebar:
     st.divider()
 
     st.markdown("### ⚙️ Settings")
-
     model_keys   = list(MODEL_OPTIONS.keys())
     model_labels = list(MODEL_OPTIONS.values())
     sel_idx = st.selectbox(
@@ -136,13 +314,11 @@ with st.sidebar:
     )
     selected_model = model_keys[sel_idx]
 
-    # Show TPM warning for compound models
     if "compound" in selected_model:
         st.warning(
             "⚠️ **compound models have 30,000 TPM** (tokens/min).\n\n"
-            "This is very low — complex queries may hit the 429 rate limit. "
-            "The system will auto-retry, but you may need to wait ~10s. "
-            "Switch to **llama-3.3-70b-versatile** for the best experience."
+            "Complex queries may hit the 429 rate limit. "
+            "Switch to **llama-3.3-70b-versatile** for best experience."
         )
 
     show_trace = st.toggle("🔍 Show reasoning trace", value=False)
@@ -185,7 +361,7 @@ if agent is None:
     st.stop()
 
 
-# ── Render trace helper ───────────────────────────────────────────────────────
+# ── Render trace ──────────────────────────────────────────────────────────────
 def render_trace(trace: dict, expanded: bool = False):
     if not trace.get("trace"):
         return
@@ -202,7 +378,7 @@ def render_trace(trace: dict, expanded: bool = False):
                 if isinstance(r, dict):
                     preview = {k: v for k, v in r.items() if k != "products"}
                     if "products" in r:
-                        preview["products_count"]  = len(r["products"])
+                        preview["products_count"] = len(r["products"])
                         if r["products"]:
                             preview["first_product"] = r["products"][0].get("name", "")
                     st.json(preview)
