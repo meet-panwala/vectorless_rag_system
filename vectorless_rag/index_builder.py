@@ -1,15 +1,3 @@
-"""
-index_builder.py
-----------------
-Builds a PageIndex-style hierarchical catalog tree from the Flipkart JSON dataset.
-
-Field mapping fixed to match actual JSON structure:
-  title          → product name
-  selling_price  → price (string "921" → float)
-  average_rating → rating (string "3.9" → float)
-  discount       → discount % ("69% off" → float 69.0)
-"""
-
 import json
 import os
 import re

@@ -1,15 +1,3 @@
-"""
-agent.py  —  Final working version
-------------------------------------
-Fix in this version:
-  ✅ Off-topic query guard:
-       - Keyword-based fast check runs BEFORE any tool call
-       - If query is clearly unrelated to fashion/products → instant refusal
-       - No API call wasted, no hallucination possible
-       - Polite, helpful refusal message shown
-  ✅ All previous fixes retained
-"""
-
 import json
 import os
 import re
@@ -19,7 +7,7 @@ from .catalog_tools import TOOL_SCHEMAS, ToolExecutor
 from .data_store import DataStore
 from .index_builder import load_catalog_tree
 
-# ─── Constants ────────────────────────────────────────────────────────────────
+# ─── Constants
 MAX_TOOL_RESULT_CHARS = 3_500
 MAX_HISTORY_PAIRS     = 4
 MAX_TURN_CHARS        = 500
@@ -28,7 +16,7 @@ MAX_RETRIES_429       = 3
 MAX_STEPS             = 12
 FORCE_ANSWER_AFTER    = 3
 
-# ─── Off-topic refusal message ────────────────────────────────────────────────
+# ─── Off-topic refusal message
 REFUSAL_MESSAGE = (
     "I'm sorry, I don't have information about that. 🙏\n\n"
     "I am a **Fashion Shopping AI Assistant** and I only have knowledge about:\n"
@@ -40,8 +28,7 @@ REFUSAL_MESSAGE = (
     "Please ask me something related to fashion products and I'll be happy to help!"
 )
 
-# ─── Fashion-related keywords for relevance check ─────────────────────────────
-# If the query contains ANY of these → it's relevant → proceed normally
+# fashion related keyword
 FASHION_KEYWORDS = {
     # product types
     "shirt", "kurta", "saree", "dress", "jeans", "trouser", "pant", "jacket",
@@ -86,7 +73,7 @@ OFFTOPIC_KEYWORDS = {
     "define", "meaning of", "translate",
 }
 
-# ─── System prompt ────────────────────────────────────────────────────────────
+# System prompt
 SYSTEM_PROMPT = """You are a Flipkart Fashion Shopping Assistant with access to 30,000+ fashion products.
 
 YOUR SCOPE — you ONLY answer questions about:
@@ -137,7 +124,7 @@ FORCE_ANSWER_MSG = {
 DEFAULT_MODEL = "llama-3.3-70b-versatile"
 
 
-# ─── CatalogAgent ─────────────────────────────────────────────────────────────
+# Catalog agent
 class CatalogAgent:
     def __init__(
         self,
@@ -153,7 +140,7 @@ class CatalogAgent:
         self.max_steps   = max_tool_calls
         self.temperature = temperature
 
-    # ─── Public API ───────────────────────────────────────────────────────────
+    # Public API
     def get_tool_trace(self, user_message: str, history: list = None) -> dict:
         """
         Main entry point. Runs relevance check first,
@@ -288,7 +275,7 @@ class CatalogAgent:
 
         return False  # default: assume relevant
 
-    # ─── Safe final answer ────────────────────────────────────────────────────
+    # ─── Safe final answer
     def _safe_final_answer(
         self,
         messages:       list,

@@ -1,15 +1,3 @@
-"""
-build_index.py
---------------
-One-time script: reads the Flipkart JSON dataset and builds the
-PageIndex-style catalog tree saved to catalog_index/catalog_tree.json.
-
-Run this ONCE before starting the Streamlit app:
-    python build_index.py
-
-You only need to re-run it if the dataset changes.
-"""
-
 import os
 import sys
 import time

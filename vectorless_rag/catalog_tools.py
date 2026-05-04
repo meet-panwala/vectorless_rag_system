@@ -1,17 +1,3 @@
-"""
-catalog_tools.py
-----------------
-Defines the 5 tools available to the Groq LLM agent + their executors.
-
-413-prevention changes vs original:
-  - get_catalog_structure() returns a COMPACT summary only:
-      category → { total, sub_categories: [name, name, ...], top_brands[:5] }
-    NOT the full price-band breakdown. That level of detail lives in
-    get_subcategory_details() which is only called when needed.
-  - filter_products() caps limit at 8 (not 20) to keep result payloads small.
-  - compare_products() caps at 2 products per segment.
-  - Product dicts are slimmed: description capped at 150 chars.
-"""
 
 import json
 from typing import Optional

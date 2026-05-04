@@ -1,24 +1,3 @@
-"""
-data_store.py
--------------
-In-memory product store for the vectorless RAG system.
-
-Field mapping fixed to match actual Flipkart JSON structure:
-  JSON field         → normalised field
-  ─────────────────────────────────────
-  title              → product_name
-  selling_price      → discounted_price  (string "921" → float 921.0)
-  actual_price       → actual_price      (string "2,999" → float 2999.0)
-  discount           → discount_percentage ("69% off" → float 69.0)
-  average_rating     → rating            (string "3.9" → float 3.9)
-  url                → product_link
-  images[0]          → image             (first image from array)
-  brand              → brand             (unchanged)
-  category           → category          (unchanged)
-  sub_category       → sub_category      (unchanged)
-  description        → description       (unchanged)
-"""
-
 import json
 import re
 from pathlib import Path
